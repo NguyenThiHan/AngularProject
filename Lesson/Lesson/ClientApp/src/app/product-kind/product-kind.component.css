@@ -1,0 +1,48 @@
+
+@media (max-width: 767px) {
+  /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+  .body-content {
+    padding-top: 0px;
+  }
+}
+
+#body{
+    padding-top:50px;
+}
+h4{
+  text-align:left;
+  color:aquamarine;
+}
+div.title {
+  background-color: antiquewhite;
+}cart{
+  float: right;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+  li a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  li a:hover:not(.active)
+  {
+    background-color: #555;
+    color: white;
+  }
+button.btnInsert{
+  position:center;
+}

@@ -1,0 +1,28 @@
+<div [hidden]="flag">
+  <h1>List Product</h1>
+  <table class='table' id="product">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th> ProductKindId</th>
+        <th>NameProduct</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of product" (click)="productDetailClick(item.id)">
+        <td>{{ item.id }}</td>
+        <td>{{ item.productKindId }}</td>
+        <td>{{ item.nameProduct }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<app-product-detail [productDetailId]='curentProductDetailId'></app-product-detail>
+
+<div class="button">
+  <button class="cancel" (click)="flag=!flag">Cancel</button>
+  <button class="add" (click)="addClick()">Add to Cart</button>
+  <button class="update" (click)="addClick()">Update</button>
+</div>
+

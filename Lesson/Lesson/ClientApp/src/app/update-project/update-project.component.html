@@ -1,0 +1,19 @@
+<h3>Update Product</h3>
+
+<form [formGroup]="updatetProduct" (ngSubmit)="onSubmit()">
+  <label>
+    Id:
+    <br />
+    <input type="number" placeholder="Id" formControlName="Id" />
+  </label>
+  <label>
+    ProductKindId:
+    <input type="number" placeholder="ProductKindId" formControlName="productkindid" />
+  </label>
+  <label>
+    NameProduct:
+    <input type="text" placeholder="NameProduct" formControlName="nameproduct" />
+  </label>
+</form>
+
+<button type="submit" (click)="onSubmit()">Update</button>

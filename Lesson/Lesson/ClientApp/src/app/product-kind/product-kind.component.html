@@ -1,0 +1,33 @@
+<!--<ul class="w3-ul w3-red">
+  <li [routerLinkActive]='["link-active"]' *ngFor="let item of productKind ">
+    <a [routerLink]='["/product-list"]' (click)="productKindClick(item.id)">
+      {{item.nameProductKind}}
+    </a>
+  </li>
+</ul>-->
+<!--<br />
+<br />
+<br />
+<br />-->
+
+
+<div class="container">
+  <div class='col-sm-3' id="body">
+    <h3>Product</h3>
+    <ul class="w3-ul w3-red">
+      <li [routerLinkActive]='["link-active"]' *ngFor="let item of productKind ">
+        <a [routerLink]='["/product-list"]' (click)="productKindClick(item.id)">
+          {{item.nameProductKind}}
+        </a>
+      </li>
+    </ul>
+   <app-insert-product></app-insert-product>
+  </div>
+
+  <div class='col-sm-8 body-content'>
+    <app-product-list [productKindId]='curentProductKindId'></app-product-list>
+    
+  </div>
+    
+</div>
+

@@ -1,0 +1,13 @@
+div.container {
+  width: 100%;
+  background-color: ghostwhite;
+}
+h3{
+  padding-top:50px;
+}
+@media (max-width: 767px) {
+  /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+  .body-content {
+    padding-top: 50px;
+  }
+}

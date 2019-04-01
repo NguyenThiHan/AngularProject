@@ -1,0 +1,20 @@
+<h3>Insert Product</h3>
+
+<form [formGroup]="insertProduct" (ngSubmit)="onSubmit()">
+  <label>
+    Id:
+    <br />
+    <input type="number" placeholder="Id" formControlName="id"/>
+  </label>
+  <label>
+    ProductKindId:
+    <input type="number" placeholder="ProductKindId" formControlName="productkindid"/>
+  </label>
+  <label>
+    NameProduct:
+    <input type="text" placeholder="NameProduct" formControlName="nameproduct"/>
+  </label>
+</form>
+
+<button class="add" type="submit" (click)="onSubmit()">Add</button>
+
